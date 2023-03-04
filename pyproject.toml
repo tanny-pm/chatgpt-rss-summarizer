@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "chatgpt-rss-summarizer"
+version = "0.1.0"
+description = "Python application that summarizes the content of each article in an RSS feed using the ChatGPT API."
+authors = ["Tanny <xxx@xxx.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+feedparser = "^6.0.10"
+requests = "^2.28.2"
+beautifulsoup4 = "^4.11.2"
+openai = "^0.27.0"
+python-dotenv = "^1.0.0"
+termcolor = "^2.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+mypy = "^1.0.1"
+black = "^23.1.0"
+isort = "^5.12.0"
+pytest = "^7.2.2"
+types-requests = "^2.28.11.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
